@@ -1,54 +1,36 @@
-#include <iostream>
-using namespace std;
+# Student Database Management System
 
-class Student
-{
-    char name[30];
-    int dob;
-    int marks,m1,m2,m3;
-    int total;
-    float average;
-    
-    
-    public: 
-            void getdata(void);
-            void display(void);
-            
-            
-};
+A simple C++ console-based application to store and display basic student information along with their academic marks.
 
-void Student::getdata()
-{
-    cout<<"\nEnter name:";
-    cin>>name;
-    cout<<"Enter Date of Birth:";
-    cin>>dob;
-    cout<<"Enter first Mark:";
-    cin>>m1;
-    cout<<"Enter second Mark: ";
-    cin>>m2;
-    cout<<"Enter third Mark:";
-    cin>>m3;
-}
+## Features
 
-void Student :: display(void)
-{
-    cout<<"\nName:"<<name;
-    cout<<"\nDate of Birth:"<<dob;
-    cout<<"\nTotal:"<<(m1+m2+m3);
-    cout<<"\nAverage:"<<(m1+m2+m3)/3;
-    
-}
+- Accepts student details:
+  - Name
+  - Date of Birth
+  - Marks in 3 subjects
+- Calculates:
+  - Total Marks
+  - Average Marks
+- Displays the entered student information
 
-int main()
-{
-    Student s1,s2,s3;
-    s1.getdata();
-    s1.display();
-    s2.getdata();
-    s2.display();
-    s3.getdata();
-    s3.display();
-    return 0;
-    
-}
+## Technologies Used
+
+- C++
+- Object-Oriented Programming (Classes and Objects)
+
+## Program Structure
+
+### Class: Student
+
+The `Student` class contains:
+
+#### Data Members
+- `name` – Stores student's name
+- `dob` – Stores student's date of birth
+- `m1`, `m2`, `m3` – Marks of three subjects
+
+#### Member Functions
+- `getdata()` – Accepts student details from the user
+- `display()` – Displays student details, total marks, and average marks
+
+## Sample Output
